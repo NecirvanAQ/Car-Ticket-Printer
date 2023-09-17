@@ -28,7 +28,7 @@ namespace Program
 
         }
 
-        static string RegGetter() /* gets the reg (depends on Menu()) */
+        static string RegGetter() /* gets the reg with some light validation (depends on Menu()) */
         {
             string? correct = "";
             string? reg = "";
@@ -58,8 +58,6 @@ namespace Program
                     Console.WriteLine("");
                     Console.WriteLine("Try again.");
                 }
-
-
 
             }
 
