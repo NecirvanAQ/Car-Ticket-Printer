@@ -19,6 +19,8 @@ namespace Program
 
             Console.BackgroundColor = ConsoleColor.Blue;
             Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Black;
+            
 
             Console.WriteLine("##################################################################");
             Console.WriteLine("");
