@@ -1,0 +1,15 @@
+E:\_School\Computer Science\Car-Ticket-Printer\bin\Debug\net7.0\Car-Ticket-Printer.exe
+e:\_School\Computer Science\Car-Ticket-Printer\bin\Debug\net7.0\Car-Ticket-Printer.deps.json
+e:\_School\Computer Science\Car-Ticket-Printer\bin\Debug\net7.0\Car-Ticket-Printer.runtimeconfig.json
+E:\_School\Computer Science\Car-Ticket-Printer\bin\Debug\net7.0\Car-Ticket-Printer.dll
+E:\_School\Computer Science\Car-Ticket-Printer\bin\Debug\net7.0\Car-Ticket-Printer.pdb
+E:\_School\Computer Science\Car-Ticket-Printer\obj\Debug\net7.0\Car-Ticket-Printer.csproj.AssemblyReference.cache
+E:\_School\Computer Science\Car-Ticket-Printer\obj\Debug\net7.0\Car-Ticket-Printer.GeneratedMSBuildEditorConfig.editorconfig
+E:\_School\Computer Science\Car-Ticket-Printer\obj\Debug\net7.0\Car-Ticket-Printer.AssemblyInfoInputs.cache
+E:\_School\Computer Science\Car-Ticket-Printer\obj\Debug\net7.0\Car-Ticket-Printer.AssemblyInfo.cs
+E:\_School\Computer Science\Car-Ticket-Printer\obj\Debug\net7.0\Car-Ticket-Printer.csproj.CoreCompileInputs.cache
+E:\_School\Computer Science\Car-Ticket-Printer\obj\Debug\net7.0\Car-Ticket-Printer.dll
+E:\_School\Computer Science\Car-Ticket-Printer\obj\Debug\net7.0\refint\Car-Ticket-Printer.dll
+E:\_School\Computer Science\Car-Ticket-Printer\obj\Debug\net7.0\Car-Ticket-Printer.pdb
+e:\_School\Computer Science\Car-Ticket-Printer\obj\Debug\net7.0\Car-Ticket-Printer.genruntimeconfig.cache
+e:\_School\Computer Science\Car-Ticket-Printer\obj\Debug\net7.0\ref\Car-Ticket-Printer.dll
