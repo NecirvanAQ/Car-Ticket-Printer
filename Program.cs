@@ -10,6 +10,7 @@ namespace Program
         {
 
             string reg = RegGetter();
+            string duration = DurationGetter();
 
         }
 
@@ -60,6 +61,113 @@ namespace Program
                     Console.WriteLine("");
                     Console.WriteLine("Try again.");
                 }
+
+            }
+
+            return reg;
+        }
+
+        static string DurationGetter() /* gets the duration with some light validation (depends on Menu()) */
+        {
+
+            string? correct = "";
+            string? reg = "";
+            while (correct != "y" || correct != "yes")
+            {
+
+
+                Menu();
+
+                Console.WriteLine("Please select duration:          (Press number 1 - 7)");
+                Console.WriteLine("");
+                Console.WriteLine("1       Up to 30 minutes       £1");
+                Console.WriteLine("1       30-60 minutes          £1");
+                Console.WriteLine("1       Up to 2 hours          £1");
+                Console.WriteLine("1       Up to 3 hours          £1");
+                Console.WriteLine("1       Up to 4 hours          £1");
+                Console.WriteLine("1       Up to 6 hours          £1");
+                Console.WriteLine("1       Up to 12 hours         £1");
+                Console.WriteLine("");
+
+                reg = Console.ReadLine();
+                Console.WriteLine("Duration selected: " + reg);
+                Console.WriteLine("");
+
+                Console.WriteLine("Is this correct?  (y/n)");
+                correct = Console.ReadLine();
+
+                if (correct == "y")
+                {
+                    break;
+                }
+
+                if (correct == "n")
+                {
+                    Console.WriteLine("");
+                    Console.WriteLine("Try again.");
+                }
+
+            }
+
+            return reg;
+        }
+
+        static int Pay(string duration)
+        {
+            double due = 0;
+            double payed = 0;
+
+            if (duration == "1")
+            {
+                due = 1;
+            }
+            if (duration == "2")
+            {
+                due = 2;
+            }
+            if (duration == "3")
+            {
+                due = 3;
+            }
+            if (duration == "4")
+            {
+                due = 4;
+            }
+            if (duration == "5")
+            {
+                due = 5;
+            }
+            if (duration == "6")
+            {
+                due = 6;
+            }
+            if (duration == "7")
+            {
+                due = 10;
+            }
+
+            while (payed < due)
+            {
+
+
+                Menu();
+
+                Console.WriteLine("Please select duration:          (Press number 1 - 7)");
+                Console.WriteLine("");
+                Console.WriteLine("1       Up to 30 minutes       £1");
+                Console.WriteLine("1       30-60 minutes          £1");
+                Console.WriteLine("1       Up to 2 hours          £1");
+                Console.WriteLine("1       Up to 3 hours          £1");
+                Console.WriteLine("1       Up to 4 hours          £1");
+                Console.WriteLine("1       Up to 6 hours          £1");
+                Console.WriteLine("1       Up to 12 hours         £1");
+                Console.WriteLine("");
+                Console.WriteLine("Amount tendered: "+payed);
+                Console.WriteLine("");
+
+                Console.Write("Please enter the coins to the value of" + due);
+
+                
 
             }
 
