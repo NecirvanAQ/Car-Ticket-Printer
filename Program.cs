@@ -2,6 +2,11 @@
 using System.Collections.Concurrent;
 using System.Xml;
 using System.Threading;
+using System.Linq;
+using System.Collections.Generic;
+using System.IO;
+
+
 
 namespace Program
 {
@@ -9,6 +14,8 @@ namespace Program
     {
         static void Main(string[] args)
         {
+
+            
 
             string reg = RegGetter();
             string durationString = DurationGetter();
@@ -41,6 +48,62 @@ namespace Program
 
         }
 
+
+        static void Admin()
+        {
+
+            string? option = "0";
+            string data;
+            StreamReader reader = null;
+
+
+            while (option != "4")
+            {
+
+                Console.Clear();
+
+                Console.WriteLine("");
+                Console.WriteLine(" A D M I N  P A N E L  ");
+                Console.WriteLine("");
+                Console.WriteLine("1       Print logs");
+                Console.WriteLine("2       Continue to carpark menu");
+                Console.WriteLine("");
+                option = Console.ReadLine();
+
+                try
+                {
+                    reader = new StreamReader("logs.txt");
+                    data = reader.ReadLine();
+
+                    while (data != null)
+                    {
+                        Console.WriteLine(data);
+                        data = reader.ReadLine();
+
+                    }
+
+                
+
+                }
+
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+
+                finally
+                {
+                    reader.Close();
+                    Console.ReadKey();
+                }
+
+
+
+
+            }
+
+        }
+
         static string RegGetter() /* gets the reg with some light validation (depends on Menu()) */
         {
             string? correct = "";
@@ -55,6 +118,12 @@ namespace Program
                 Console.WriteLine("Please enter car registration");
                 Console.WriteLine("");
                 reg = Console.ReadLine();
+
+                if (reg == "necircode")
+                {
+                    Admin();
+                }
+
                 Console.WriteLine("Registration entered: " + reg);
                 Console.WriteLine("");
 
@@ -91,12 +160,12 @@ namespace Program
                 Console.WriteLine("Please select duration:          (Press number 1 - 7)");
                 Console.WriteLine("");
                 Console.WriteLine("1       Up to 30 minutes       £1");
-                Console.WriteLine("2       30-60 minutes          £1");
-                Console.WriteLine("3       Up to 2 hours          £1");
-                Console.WriteLine("4       Up to 3 hours          £1");
-                Console.WriteLine("5       Up to 4 hours          £1");
-                Console.WriteLine("6       Up to 6 hours          £1");
-                Console.WriteLine("7       Up to 12 hours         £1");
+                Console.WriteLine("2       30-60 minutes          £2");
+                Console.WriteLine("3       Up to 2 hours          £3");
+                Console.WriteLine("4       Up to 3 hours          £4");
+                Console.WriteLine("5       Up to 4 hours          £5");
+                Console.WriteLine("6       Up to 6 hours          £7");
+                Console.WriteLine("7       Up to 12 hours         £12");
                 Console.WriteLine("");
 
                 reg = Console.ReadLine();
@@ -165,12 +234,12 @@ namespace Program
                 Console.WriteLine("Please select duration:          (Press number 1 - 7)");
                 Console.WriteLine("");
                 Console.WriteLine("1       Up to 30 minutes       £1");
-                Console.WriteLine("1       30-60 minutes          £1");
-                Console.WriteLine("1       Up to 2 hours          £1");
-                Console.WriteLine("1       Up to 3 hours          £1");
-                Console.WriteLine("1       Up to 4 hours          £1");
-                Console.WriteLine("1       Up to 6 hours          £1");
-                Console.WriteLine("1       Up to 12 hours         £1");
+                Console.WriteLine("1       30-60 minutes          £2");
+                Console.WriteLine("1       Up to 2 hours          £3");
+                Console.WriteLine("1       Up to 3 hours          £4");
+                Console.WriteLine("1       Up to 4 hours          £5");
+                Console.WriteLine("1       Up to 6 hours          £7");
+                Console.WriteLine("1       Up to 12 hours         £12");
                 Console.WriteLine("");
                 Console.WriteLine("Amount tendered: " + payed);
                 Console.WriteLine("");
@@ -195,12 +264,12 @@ namespace Program
                         Console.WriteLine("Please select duration:          (Press number 1 - 7)");
                         Console.WriteLine("");
                         Console.WriteLine("1       Up to 30 minutes       £1");
-                        Console.WriteLine("1       30-60 minutes          £1");
-                        Console.WriteLine("1       Up to 2 hours          £1");
-                        Console.WriteLine("1       Up to 3 hours          £1");
-                        Console.WriteLine("1       Up to 4 hours          £1");
-                        Console.WriteLine("1       Up to 6 hours          £1");
-                        Console.WriteLine("1       Up to 12 hours         £1");
+                        Console.WriteLine("1       30-60 minutes          £2");
+                        Console.WriteLine("1       Up to 2 hours          £3");
+                        Console.WriteLine("1       Up to 3 hours          £4");
+                        Console.WriteLine("1       Up to 4 hours          £5");
+                        Console.WriteLine("1       Up to 6 hours          £7");
+                        Console.WriteLine("1       Up to 12 hours         £12");
                         Console.WriteLine("");
                         Console.WriteLine("Amount tendered: " + payed);
                         Console.WriteLine("");
@@ -244,19 +313,19 @@ namespace Program
             Thread.Sleep(100);
             Console.WriteLine("                                 ");
             Thread.Sleep(100);
-            Console.WriteLine("Entry: {0}           ", DateTime.Now);
+            Console.WriteLine("Entry: {0}       ", DateTime.Now);
             Thread.Sleep(100);
             Console.WriteLine("                                 ");
             Thread.Sleep(100);
             Console.WriteLine("                                 ");
             Thread.Sleep(100);
-            Console.WriteLine("Fee:         £{0}                 ", due);
+            Console.WriteLine("Fee:         £{0}                  ", due);
             Thread.Sleep(100);
             Console.WriteLine("                                 ");
             Thread.Sleep(100);
             Console.WriteLine("                                 ");
             Thread.Sleep(100);
-            Console.WriteLine("Expiry: " +((DateTime.Now).Add(duration))+"    ");
+            Console.WriteLine("Expiry: " +((DateTime.Now).Add(duration))+"      ");
             Thread.Sleep(100);
             Console.WriteLine("                                 ");
             Thread.Sleep(100);
@@ -269,29 +338,12 @@ namespace Program
             Console.WriteLine("                                 ");
             Thread.Sleep(100);
 
+            StreamWriter writer = null;
+            writer = new StreamWriter("logs.txt");
+            writer.WriteLine("Registration: "+reg+"| Entry: "+DateTime.Now+"| Fee: "+due+"| Expiry: "+((DateTime.Now).Add(duration)));
+            writer.Close();
+
+
         }
     }
 }
-
-
-
-/*
-
-   B O B ' S   C A R   P A R K
-
-
-Registration: ABC
-
-
-Entry: 20/09/2023 15:37:20
-
-
-Fee:         £1
-
-
-Expiry: 20/09/2023 16:07:20
-
-
-        Have a nice day!
-
-*/
