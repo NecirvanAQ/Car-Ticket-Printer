@@ -15,8 +15,6 @@ namespace Program
         static void Main(string[] args)
         {
 
-            
-
             string reg = RegGetter();
             string durationString = DurationGetter();
             double due = Pay(durationString);
@@ -57,7 +55,7 @@ namespace Program
             StreamReader reader = null;
 
 
-            while (option != "4")
+            while (option != "2")
             {
 
                 Console.Clear();

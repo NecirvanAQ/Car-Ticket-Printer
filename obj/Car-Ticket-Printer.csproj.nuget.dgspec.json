@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\_School\\Computer Science\\Car Ticket Printer\\Car-Ticket-Printer.csproj": {}
+    "E:\\_School\\Computer Science\\Car Ticket Printer\\Car-Ticket-Printer.csproj": {}
   },
   "projects": {
-    "e:\\_School\\Computer Science\\Car Ticket Printer\\Car-Ticket-Printer.csproj": {
+    "E:\\_School\\Computer Science\\Car Ticket Printer\\Car-Ticket-Printer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\_School\\Computer Science\\Car Ticket Printer\\Car-Ticket-Printer.csproj",
+        "projectUniqueName": "E:\\_School\\Computer Science\\Car Ticket Printer\\Car-Ticket-Printer.csproj",
         "projectName": "Car-Ticket-Printer",
-        "projectPath": "e:\\_School\\Computer Science\\Car Ticket Printer\\Car-Ticket-Printer.csproj",
+        "projectPath": "E:\\_School\\Computer Science\\Car Ticket Printer\\Car-Ticket-Printer.csproj",
         "packagesPath": "C:\\Users\\stubby\\.nuget\\packages\\",
-        "outputPath": "e:\\_School\\Computer Science\\Car Ticket Printer\\obj\\",
+        "outputPath": "E:\\_School\\Computer Science\\Car Ticket Printer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\stubby\\AppData\\Roaming\\NuGet\\NuGet.Config"
