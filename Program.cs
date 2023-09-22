@@ -68,34 +68,41 @@ namespace Program
                 Console.WriteLine("");
                 option = Console.ReadLine();
 
-                try
+                if (option == "1")
                 {
-                    reader = new StreamReader("logs.txt");
-                    data = reader.ReadLine();
-
-                    while (data != null)
+                    try
                     {
-                        Console.WriteLine(data);
+                        reader = new StreamReader("logs.txt");
                         data = reader.ReadLine();
+
+                        while (data != null)
+                        {
+                            Console.WriteLine(data);
+                            data = reader.ReadLine();
+                        }
+
+
 
                     }
 
-                
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e.Message);
+                    }
 
+                    finally
+                    {
+                        if (reader != null)
+                        {
+                            reader.Close();
+                        }
+                        Console.ReadKey();
+                    }
                 }
 
-                catch (Exception e)
-                {
-                    Console.WriteLine(e.Message);
-                }
 
-                finally
-                {
-                    reader.Close();
-                    Console.ReadKey();
-                }
-
-
+                Console.Clear();
+                Menu();
 
 
             }
