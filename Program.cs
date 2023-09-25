@@ -14,19 +14,20 @@ namespace Program
     {
         static void Main(string[] args)
         {
+            while (true)
+            {
 
-            string reg = RegGetter();
-            string durationString = DurationGetter();
-            double due = Pay(durationString);
+                string reg = RegGetter();
+                string durationString = DurationGetter();
+                double due = Pay(durationString);
 
-            System.TimeSpan duration = new System.TimeSpan(0, Convert.ToInt32(durationString), 0, 0);
+                System.TimeSpan duration = new System.TimeSpan(0, Convert.ToInt32(durationString), 0, 0);
 
-            Console.Clear();
+                Console.Clear();
 
-            Print(duration, reg, due);
-
-            Console.ReadKey();
-
+                Print(duration, reg, due);
+            
+            }
         }
 
         static void Menu() /* writes the menu */
@@ -40,7 +41,7 @@ namespace Program
 
             Console.WriteLine("##################################################################");
             Console.WriteLine("");
-            Console.WriteLine("W E L C O M E  T O  B O B ' S  C A R  P A R K");
+            Console.WriteLine("          W E L C O M E  T O  B O B ' S  C A R  P A R K");
             Console.WriteLine("");
             Console.WriteLine("##################################################################");
 
@@ -347,6 +348,9 @@ namespace Program
             writer = new StreamWriter("logs.txt");
             writer.WriteLine("Registration: "+reg+"| Entry: "+DateTime.Now+"| Fee: "+due+"| Expiry: "+((DateTime.Now).Add(duration)));
             writer.Close();
+
+
+            Thread.Sleep(5000);
 
 
         }
