@@ -56,3 +56,17 @@ C:\Users\AQ231029\source\repos\Car-Ticket-Printer3\bin\Debug\net7.0\Car-Ticket-P
 C:\Users\AQ231029\source\repos\Car-Ticket-Printer3\bin\Debug\net7.0\Car-Ticket-Printer.pdb
 C:\Users\AQ231029\source\repos\Car-Ticket-Printer3\obj\Debug\net7.0\Car-Ticket-Printer.genruntimeconfig.cache
 C:\Users\AQ231029\source\repos\Car-Ticket-Printer3\obj\Debug\net7.0\ref\Car-Ticket-Printer.dll
+C:\Users\AQ231029\source\repos\Car-Ticket-Printer2\bin\Debug\net7.0\Car-Ticket-Printer.exe
+C:\Users\AQ231029\source\repos\Car-Ticket-Printer2\bin\Debug\net7.0\Car-Ticket-Printer.deps.json
+C:\Users\AQ231029\source\repos\Car-Ticket-Printer2\bin\Debug\net7.0\Car-Ticket-Printer.runtimeconfig.json
+C:\Users\AQ231029\source\repos\Car-Ticket-Printer2\bin\Debug\net7.0\Car-Ticket-Printer.dll
+C:\Users\AQ231029\source\repos\Car-Ticket-Printer2\bin\Debug\net7.0\Car-Ticket-Printer.pdb
+C:\Users\AQ231029\source\repos\Car-Ticket-Printer2\obj\Debug\net7.0\Car-Ticket-Printer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AQ231029\source\repos\Car-Ticket-Printer2\obj\Debug\net7.0\Car-Ticket-Printer.AssemblyInfoInputs.cache
+C:\Users\AQ231029\source\repos\Car-Ticket-Printer2\obj\Debug\net7.0\Car-Ticket-Printer.AssemblyInfo.cs
+C:\Users\AQ231029\source\repos\Car-Ticket-Printer2\obj\Debug\net7.0\Car-Ticket-Printer.csproj.CoreCompileInputs.cache
+C:\Users\AQ231029\source\repos\Car-Ticket-Printer2\obj\Debug\net7.0\Car-Ticket-Printer.dll
+C:\Users\AQ231029\source\repos\Car-Ticket-Printer2\obj\Debug\net7.0\refint\Car-Ticket-Printer.dll
+C:\Users\AQ231029\source\repos\Car-Ticket-Printer2\obj\Debug\net7.0\Car-Ticket-Printer.pdb
+C:\Users\AQ231029\source\repos\Car-Ticket-Printer2\obj\Debug\net7.0\Car-Ticket-Printer.genruntimeconfig.cache
+C:\Users\AQ231029\source\repos\Car-Ticket-Printer2\obj\Debug\net7.0\ref\Car-Ticket-Printer.dll

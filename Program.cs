@@ -174,7 +174,33 @@ namespace Program
                 Console.WriteLine("7       Up to 12 hours         £12");
                 Console.WriteLine("");
 
-                reg = Console.ReadLine();
+                int test;
+                do
+                {
+                    reg = Console.ReadLine();
+
+                    try
+                    {
+                        test = Convert.ToInt32(reg);
+                        break;
+                    }
+                    catch
+                    {
+                        Menu();
+
+                        Console.WriteLine("Please select duration:          (Press number 1 - 7)");
+                        Console.WriteLine("");
+                        Console.WriteLine("1       Up to 30 minutes       £1");
+                        Console.WriteLine("2       30-60 minutes          £2");
+                        Console.WriteLine("3       Up to 2 hours          £3");
+                        Console.WriteLine("4       Up to 3 hours          £4");
+                        Console.WriteLine("5       Up to 4 hours          £5");
+                        Console.WriteLine("6       Up to 6 hours          £7");
+                        Console.WriteLine("7       Up to 12 hours         £12");
+                        Console.WriteLine("");
+                    }
+
+                } while (true);
                 Console.WriteLine("Duration selected: " + reg);
                 Console.WriteLine("");
 
